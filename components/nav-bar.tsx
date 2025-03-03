@@ -1,12 +1,12 @@
-"use client"
-import React from 'react'
-import Link from 'next/link'
-import LogoAnimation from './logo-animation'
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import LogoAnimation from './logo-animation';
 
 function NavBar() {
   return (
-    <nav className="bg-background p-5 border-b fixed justify-between flex items-center  w-full z-10">
-      <Link href="/" className=" text-xl font-bold h-6 w-6">
+    <nav className="bg-background fixed z-10 flex w-full items-center justify-between border-b p-5">
+      <Link href="/" className="h-6 w-6 text-xl font-bold">
         <LogoAnimation />
       </Link>
       {/* <div className="space-x-4">
@@ -21,7 +21,7 @@ function NavBar() {
         </Link>
       </div> */}
     </nav>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

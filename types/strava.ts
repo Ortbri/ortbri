@@ -9,7 +9,7 @@ export interface Athlete {
   city: string;
   state: string;
   country: string;
-  sex: "M" | "F";
+  sex: 'M' | 'F';
   premium: boolean;
   summit: boolean;
   created_at: string;
@@ -108,5 +108,3 @@ export interface StravaActivity {
   has_kudoed: boolean;
   suffer_score: number;
 }
-
-

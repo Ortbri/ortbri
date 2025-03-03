@@ -1,40 +1,41 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/providers/theme-provider";
-import NavBar from "@/components/nav-bar";
-import Footer from "@/components/footer";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import { ThemeProvider } from '@/providers/theme-provider';
+import NavBar from '@/components/nav-bar';
+import Footer from '@/components/footer';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 //TODO: fix this
 export const metadata: Metadata = {
-  title: "Brian Ortega | Website & App Developer in Crete, Nebraska",
-  description: "I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska, I help local businesses and clients worldwide bring their ideas to life.",
+  title: 'Brian Ortega | Website & App Developer in Crete, Nebraska',
+  description:
+    'I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska, I help local businesses and clients worldwide bring their ideas to life.',
   keywords: [
-    "Brian Ortega",
-    "Crete Nebraska",
-    "Nebraska Developer",
-    "Local Website Developer",
-    "App Developer",
-    "Custom Websites",
-    "Mobile Apps",
-    "iPhone Apps",
-    "Android Apps",
-    "Digital Solutions",
-    "Crete NE",
-    "Nebraska Tech"
+    'Brian Ortega',
+    'Crete Nebraska',
+    'Nebraska Developer',
+    'Local Website Developer',
+    'App Developer',
+    'Custom Websites',
+    'Mobile Apps',
+    'iPhone Apps',
+    'Android Apps',
+    'Digital Solutions',
+    'Crete NE',
+    'Nebraska Tech',
   ],
 
-  creator: "Brian Ortega",
+  creator: 'Brian Ortega',
   // openGraph: {
   //   type: "website",
   //   locale: "en_US",
@@ -58,9 +59,8 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  }
+  },
 };
-
 
 export default function RootLayout({
   children,

@@ -1,15 +1,15 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import { useTheme } from 'next-themes'
-import Image from 'next/image'
+'use client';
+import React, { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 function LogoAnimation() {
-  const { theme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   // Prevent hydration mismatch by not rendering theme-dependent content until mounted
   if (!mounted) {
@@ -23,7 +23,7 @@ function LogoAnimation() {
           className="object-contain opacity-0"
         />
       </div>
-    )
+    );
   }
 
   return (
@@ -34,7 +34,7 @@ function LogoAnimation() {
           alt="Dark mode logo"
           fill
           priority
-          className="object-contain transition-all duration-300 opacity-100 hover:scale-110"
+          className="object-contain opacity-100 transition-all duration-300 hover:scale-110"
         />
       ) : (
         <Image
@@ -42,11 +42,11 @@ function LogoAnimation() {
           alt="Light mode logo"
           fill
           priority
-          className="object-contain transition-all duration-300 opacity-100 hover:scale-90"
+          className="object-contain opacity-100 transition-all duration-300 hover:scale-90"
         />
       )}
     </div>
-  )
+  );
 }
 
-export default LogoAnimation
+export default LogoAnimation;
