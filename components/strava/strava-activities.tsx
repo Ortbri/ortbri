@@ -82,13 +82,13 @@ async function StravaActivities() {
     }
 
     return (
-      <div className="mx-auto flex w-full max-w-4xl flex-col space-y-4">
-        <h3 className="text-muted-foreground text-sm font-medium">Recent Runs</h3>
+      <div className=" flex w-full flex-col space-y-4">
+        {/* <h3 className="text-muted-foreground text-sm font-medium">Recent Runs</h3> */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           {runs.map(run => (
             <div key={run.id} className="bg-card text-card-foreground rounded-3xl border p-4">
               {run.photos?.[0] ? (
-                <div className="relative mb-4 h-40 w-full overflow-hidden rounded-md">
+                <div className="relative mb-4 h-52 sm:h-40 w-full overflow-hidden rounded-xl">
                   <Image
                     src={run.photos[0].urls['800']}
                     alt={run.name}
@@ -97,13 +97,13 @@ async function StravaActivities() {
                   />
                 </div>
               ) : (
-                <div className="bg-accent/20 relative mb-4 flex h-40 w-full items-center justify-center overflow-hidden rounded-md bg-gradient-to-br">
-                  didnt upload
+                <div className="bg-accent/50 relative mb-4 flex h-52 sm:h-40 w-full items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br">
+                  
                 </div>
               )}
               <h4 className="font-medium">{run.name}</h4>
               <div className="text-muted-foreground mt-2 text-sm">
-                <p>{(run.distance / 1000).toFixed(2)} km</p>
+                <p>{(run.distance / 1609.34).toFixed(2)} miles</p>
                 <p>{Math.floor(run.moving_time / 60)} minutes</p>
                 <p className="mt-1 text-xs">
                   {formatDistanceToNow(new Date(run.start_date), {

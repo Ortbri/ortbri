@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main className="min-h-screen px-5 pt-24">
-      <h1 className="text-foreground text-4xl font-bold tracking-tighter">My Projects</h1>
+    <main className="min-h-screen w-full px-5 pt-24 pb-5 flex ">
+      <div className="mx-auto w-full max-w-7xl  rounded-3xl  ">
+          {/* Hello! */}
+      </div>
     </main>
   );
 }

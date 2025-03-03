@@ -4,7 +4,7 @@ import StravaFooter from './strava/strava-footer';
 
 function Footer() {
   return (
-    <footer className="flex w-full flex-col space-y-4 border-t bg-neutral-50 pt-14 pb-4 dark:bg-neutral-950">
+    <footer className="flex w-full flex-col space-y-4  pt-14 pb-4 ">
       <StravaFooter />
       <div className="flex flex-col items-center space-y-2.5">
         <ThemeSwitcher />

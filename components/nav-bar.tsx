@@ -2,24 +2,23 @@
 import React from 'react';
 import Link from 'next/link';
 import LogoAnimation from './logo-animation';
+import { Button } from './ui/button';
 
 function NavBar() {
   return (
-    <nav className="bg-background fixed z-10 flex w-full items-center justify-between border-b p-5">
-      <Link href="/" className="h-6 w-6 text-xl font-bold">
-        <LogoAnimation />
-      </Link>
-      {/* <div className="space-x-4">
-        <Link href="/" className="">
-          Home
+    <nav className="fixed z-10 flex w-full">
+      <div className='mx-auto flex flex-row items-center  justify-between w-full max-w-7xl p-4'>
+        <Link href="/" className="h-6 w-6 text-xl font-bold">
+          <LogoAnimation />
         </Link>
-        <Link href="/about" className="">
-          About
+
+        <Link href={'/'}>
+          <Button className="rounded-4xl" size={'sm'}>
+            Contact Brian
+          </Button>
         </Link>
-        <Link href="/contact" className="">
-          Contact
-        </Link>
-      </div> */}
+  
+      </div>
     </nav>
   );
 }
