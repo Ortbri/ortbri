@@ -3,23 +3,21 @@ import Link from 'next/link'
 
 function NavBar() {
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-white text-xl font-bold">
+    <nav className="bg-background p-5 border-b fixed justify-between flex items-center  w-full z-10">
+        <Link href="/" className=" text-xl font-bold">
           Logo
         </Link>
         <div className="space-x-4">
-          <Link href="/" className="text-gray-300 hover:text-white">
+          <Link href="/" className="">
             Home
           </Link>
-          <Link href="/about" className="text-gray-300 hover:text-white">
+          <Link href="/about" className="">
             About
           </Link>
-          <Link href="/contact" className="text-gray-300 hover:text-white">
+          <Link href="/contact" className="">
             Contact
           </Link>
         </div>
-      </div>
     </nav>
   )
 }
