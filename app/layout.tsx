@@ -35,26 +35,26 @@ export const metadata: Metadata = {
   ],
 
   creator: "Brian Ortega",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "ortbri.vercel.app",
-    title: "Brian Ortega | Website & App Developer in Crete, Nebraska",
-    description: "I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska.",
-    siteName: "Brian Ortega's Portfolio",
-    images: [{
-      url: "/og-image.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Brian Ortega - Website and App Developer in Crete, Nebraska"
-    }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Brian Ortega | Website & App Developer in Crete, Nebraska",
-    description: "I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska.",
-    images: ["/og-image.jpg"],
-  },
+  // openGraph: {
+  //   type: "website",
+  //   locale: "en_US",
+  //   url: "ortbri.vercel.app",
+  //   title: "Brian Ortega | Website & App Developer in Crete, Nebraska",
+  //   description: "I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska.",
+  //   siteName: "Brian Ortega's Portfolio",
+  //   images: [{
+  //     url: "/og-image.jpg",
+  //     width: 1200,
+  //     height: 630,
+  //     alt: "Brian Ortega - Website and App Developer in Crete, Nebraska"
+  //   }],
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Brian Ortega | Website & App Developer in Crete, Nebraska",
+  //   description: "I build websites and mobile apps that are easy to use, fast, and helpful. Based in Crete, Nebraska.",
+  //   images: ["/og-image.jpg"],
+  // },
   robots: {
     index: true,
     follow: true,

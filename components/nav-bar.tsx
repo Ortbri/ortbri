@@ -9,7 +9,7 @@ function NavBar() {
       <Link href="/" className=" text-xl font-bold h-6 w-6">
         <LogoAnimation />
       </Link>
-      <div className="space-x-4">
+      {/* <div className="space-x-4">
         <Link href="/" className="">
           Home
         </Link>
@@ -19,7 +19,7 @@ function NavBar() {
         <Link href="/contact" className="">
           Contact
         </Link>
-      </div>
+      </div> */}
     </nav>
   )
 }
