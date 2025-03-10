@@ -93,7 +93,7 @@ async function StravaActivities() {
           {runs.map(run => (
             <div key={run.id} className="bg-card text-card-foreground rounded-3xl border p-4">
               {run.photos?.[0] ? (
-                <div className="relative mb-4 h-52 w-full overflow-hidden rounded-xl sm:h-40">
+                <div className="relative mb-4 h-72 w-full overflow-hidden rounded-xl sm:h-72">
                   <Image
                     src={run.photos[0].urls['800']}
                     alt={run.name}
