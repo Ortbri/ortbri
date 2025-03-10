@@ -18,10 +18,12 @@ The physics scene uses two main libraries:
 2. **Cannon.js** - For simulating physics, including gravity, collisions, and object interactions
 
 Each cube has two representations:
+
 - A **Three.js Mesh** for visual rendering
 - A **Cannon.js Body** for physics calculations
 
 In each animation frame:
+
 1. The physics world is updated
 2. The positions and rotations of the physics bodies are applied to their corresponding visual meshes
 3. The scene is rendered with the updated positions
@@ -72,4 +74,4 @@ cube.quaternion.copy(cubeBody.quaternion as unknown as THREE.Quaternion);
 
 - The scene limits the maximum number of cubes to prevent performance issues
 - Cubes that fall below a certain threshold are removed to maintain performance
-- Resources are properly disposed of when the component unmounts to prevent memory leaks 
+- Resources are properly disposed of when the component unmounts to prevent memory leaks

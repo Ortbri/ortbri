@@ -25,4 +25,4 @@ The ModelViewer component is designed to work with GLTF/GLB format models. If yo
 
 ```tsx
 <ModelViewer modelPath="/models/your-model.gltf" />
-``` 
+```

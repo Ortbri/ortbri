@@ -1,6 +1,10 @@
 import React, { Suspense } from 'react';
 import StravaAthlete from './strava-athlete';
-import { StravaActivitiesSkeleton, StravaAthleteSkeleton, StravaAthleteStatsSkeleton } from './strava-skeleton';
+import {
+  StravaActivitiesSkeleton,
+  StravaAthleteSkeleton,
+  StravaAthleteStatsSkeleton,
+} from './strava-skeleton';
 import StravaActivities from './strava-activities';
 import StravaAthleteStats from './strava-athlete-stats';
 

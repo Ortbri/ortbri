@@ -30,7 +30,7 @@ An interactive Three.js scene with orbit controls, allowing users to rotate, pan
 
 ```tsx
 <ThreeContainer>
-  <OrbitScene className="w-full h-full" />
+  <OrbitScene className="h-full w-full" />
 </ThreeContainer>
 ```
 
@@ -40,7 +40,7 @@ A component for loading and displaying 3D models in GLTF/GLB format.
 
 ```tsx
 <ThreeContainer>
-  <ModelViewer modelPath="/models/your-model.gltf" className="w-full h-full" />
+  <ModelViewer modelPath="/models/your-model.gltf" className="h-full w-full" />
 </ThreeContainer>
 ```
 
@@ -53,15 +53,15 @@ A component for loading and displaying 3D models in GLTF/GLB format.
 Example:
 
 ```tsx
-import ThreeContainer from "@/components/three/ThreeContainer";
-import OrbitScene from "@/components/three/OrbitScene";
+import ThreeContainer from '@/components/three/ThreeContainer';
+import OrbitScene from '@/components/three/OrbitScene';
 
 export default function MyPage() {
   return (
     <div className="my-page">
       <h1>My 3D Scene</h1>
       <ThreeContainer className="h-[500px]">
-        <OrbitScene className="w-full h-full" />
+        <OrbitScene className="h-full w-full" />
       </ThreeContainer>
     </div>
   );

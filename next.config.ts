@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'dgtzuqphqg23d.cloudfront.net',
       },
-      
+
       {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
