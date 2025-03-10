@@ -12,11 +12,21 @@ function NavBar() {
           <LogoAnimation />
         </Link>
 
-        <Link href={'/'}>
-          <Button className="rounded-4xl" size={'sm'}>
-            Contact Brian
-          </Button>
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/three" className="text-sm font-medium hover:underline">
+            Three.js Demo
+          </Link>
+          
+          <Link href="/physics" className="text-sm font-medium hover:underline">
+            Falling Cubes
+          </Link>
+          
+          <Link href={'/'}>
+            <Button className="rounded-4xl" size={'sm'}>
+              Contact Brian
+            </Button>
+          </Link>
+        </div>
   
       </div>
     </nav>
