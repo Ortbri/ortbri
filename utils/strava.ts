@@ -1,5 +1,11 @@
 import { cache } from 'react';
 
+/**
+ * FIXME: the limit of 100 requests per day is reached quickly, so we need to implement a better solution
+ * 
+ * 💡 IDEA: use a page to show the on pressing a button, if not use their own api to check their own stats with charts and graphs?
+ */
+
 interface StravaTokens {
   access_token: string;
   refresh_token: string;

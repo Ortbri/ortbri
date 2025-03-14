@@ -1,7 +1,15 @@
+import Contact from "@/components/pages/home/Contact";
+import Hero from "@/components/pages/home/Hero";
+import Interests from "@/components/pages/home/Interests";
+import Projects from "@/components/pages/home/Projects";
+
 export default function Home() {
-  return (
-    <main className="flex min-h-72 w-full px-5 pt-24 pb-5">
-      <div className="mx-auto w-full max-w-7xl rounded-3xl">{/* Hello! */}</div>
-    </main>
-  );
+	return (
+		<main className=" pt-14 ">
+			<Hero />
+			<Projects />
+			<Interests />
+			<Contact />
+		</main>
+	);
 }
